@@ -51,6 +51,11 @@
 #define ZCL_BASIC_MFG_NAME     {4,'T','u','y','a'} // Tuya
 #define ZCL_BASIC_MODEL_ID	   {7,'Z','T','H','0','2','-','z'} // ZTH02
 
+#elif BOARD == BOARD_ZTH05
+
+#define ZCL_BASIC_MFG_NAME     {4,'T','u','y','a'} // Tuya
+#define ZCL_BASIC_MODEL_ID	   {7,'Z','T','H','0','5','-','z'} // ZTH05
+
 #else
 #error "Define BOARD!"
 #endif // BOARD
@@ -292,7 +297,9 @@ const zcl_thermostatUICfgAttr_t g_zcl_thermostatUICfgDefault = {
 		.temp_comfort_min = 2000,  //  параметры ГОСТ, СНиП
 		.temp_comfort_max = 2500,
 		.humi_comfort_min = 4000,
-		.humi_comfort_max = 6000
+//		.humi_comfort_max = 6000
+		.humi_comfort_max = 6500  // change up to 65% for comfort
+
 #endif
 #endif
 };

@@ -1,5 +1,6 @@
 
-PROJECT_NAME ?= z03mmc
+PROJECT_NAME ?= ZTH05Z
+PROJECT_DEV  ?= "-DBOARD=BOARD_ZTH05"
 VERSION_BIN ?=
 
 TEL_CHIP := $(POJECT_DEF) -DMCU_CORE_8258=1 -DEND_DEVICE=1 -DMCU_STARTUP_8258=1
@@ -43,13 +44,20 @@ OUT_DIR :=
 
 COMPILEOS = $(shell uname -o)
 LINUX_OS = GNU/Linux
+MACOS = Darwin
 
 ifeq ($(COMPILEOS),$(LINUX_OS))
 	CUR_OS := linux
 	TOOLS_PATH := $(TEL_PATH)/tools/linux
 else
-	CUR_OS := windows
-	TOOLS_PATH := $(TEL_PATH)/tools/windows
+	ifeq ($(COMPILEOS),$(MACOS))
+		CUR_OS := mac
+		TOOLS_PATH := $(TEL_PATH)/tools/mac
+	else
+
+		CUR_OS := windows
+		TOOLS_PATH := $(TEL_PATH)/tools/windows
+	endif
 endif
 TC32_PATH := $(TOOLS_PATH)/tc32/bin/
 

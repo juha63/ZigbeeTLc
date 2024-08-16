@@ -5,6 +5,7 @@
 #define B14_I2C_ADDR		0x3C
 #define B16_I2C_ADDR		0	 // UART
 #define B19_I2C_ADDR		0x3E // BU9792AFUV
+#define ZTH05_I2C_ADDR		0x3E
 
 u8 i2c_address_lcd;
 

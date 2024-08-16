@@ -67,6 +67,7 @@
 //#define BOARD_THB3				26 // https://github.com/pvvx/THB2
 #define BOARD_ZTH01   				27 // ZigBee ZTH01
 #define BOARD_ZTH02   				28 // ZigBee ZTH02
+#define BOARD_ZTH05   				29 // ZigBee ZTH05
 
 /* Board define */
 #ifndef BOARD

@@ -5,5 +5,4 @@ SDK
 tools/widows
 tools/linux
 tools/mac
-bin/
 **/.DS_Store

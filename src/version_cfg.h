@@ -67,7 +67,7 @@
 //#define BOARD_THB3				26 // https://github.com/pvvx/THB2
 #define BOARD_ZTH01   				27 // ZigBee ZTH01
 #define BOARD_ZTH02   				28 // ZigBee ZTH02
-#define BOARD_ZTH05   				29 // ZigBee ZTH05
+#define BOARD_ZTH05   				33 // ZigBee ZTH05
 
 /* Board define */
 #ifndef BOARD
@@ -97,7 +97,7 @@
 #endif
 
 #define APP_RELEASE				0x01	//BCD app release "0.1"
-#define APP_BUILD				0x22	//BCD app build "2.2"
+#define APP_BUILD				0x24	//BCD app build "2.4"
 #define STACK_RELEASE			0x30	//BCD stack release 3.0
 #define STACK_BUILD				0x01	//BCD stack build 01
 
